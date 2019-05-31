@@ -1,0 +1,100 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 30/05/2019 10:42
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-right-arrow:before { content: "\f100"; }
+.flaticon-last-track-left-arrow:before { content: "\f101"; }
+.flaticon-maps-and-flags:before { content: "\f102"; }
+.flaticon-internet:before { content: "\f103"; }
+.flaticon-balance:before { content: "\f104"; }
+.flaticon-thief:before { content: "\f105"; }
+.flaticon-fire:before { content: "\f106"; }
+.flaticon-bank:before { content: "\f107"; }
+.flaticon-house:before { content: "\f108"; }
+.flaticon-finger:before { content: "\f109"; }
+.flaticon-mortarboard:before { content: "\f10a"; }
+.flaticon-foreclosure:before { content: "\f10b"; }
+.flaticon-family:before { content: "\f10c"; }
+.flaticon-gmail-logo:before { content: "\f10d"; }
+.flaticon-lawyer:before { content: "\f10e"; }
+.flaticon-calendar:before { content: "\f10f"; }
+.flaticon-phone-receiver:before { content: "\f110"; }
+.flaticon-family-1:before { content: "\f111"; }
+.flaticon-wounded:before { content: "\f112"; }
+.flaticon-car-crash:before { content: "\f113"; }
+.flaticon-house-1:before { content: "\f114"; }
+.flaticon-law:before { content: "\f115"; }
+.flaticon-book:before { content: "\f116"; }
+.flaticon-brokerage:before { content: "\f117"; }
+.flaticon-handcuffs:before { content: "\f118"; }
+.flaticon-facebook-logo:before { content: "\f119"; }
+.flaticon-smartphone-call:before { content: "\f11a"; }
+.flaticon-instagram:before { content: "\f11b"; }
+.flaticon-linkedin-logo:before { content: "\f11c"; }
+.flaticon-email-filled-closed-envelope:before { content: "\f11d"; }
+    
+    $font-Flaticon-right-arrow: "\f100";
+    $font-Flaticon-last-track-left-arrow: "\f101";
+    $font-Flaticon-maps-and-flags: "\f102";
+    $font-Flaticon-internet: "\f103";
+    $font-Flaticon-balance: "\f104";
+    $font-Flaticon-thief: "\f105";
+    $font-Flaticon-fire: "\f106";
+    $font-Flaticon-bank: "\f107";
+    $font-Flaticon-house: "\f108";
+    $font-Flaticon-finger: "\f109";
+    $font-Flaticon-mortarboard: "\f10a";
+    $font-Flaticon-foreclosure: "\f10b";
+    $font-Flaticon-family: "\f10c";
+    $font-Flaticon-gmail-logo: "\f10d";
+    $font-Flaticon-lawyer: "\f10e";
+    $font-Flaticon-calendar: "\f10f";
+    $font-Flaticon-phone-receiver: "\f110";
+    $font-Flaticon-family-1: "\f111";
+    $font-Flaticon-wounded: "\f112";
+    $font-Flaticon-car-crash: "\f113";
+    $font-Flaticon-house-1: "\f114";
+    $font-Flaticon-law: "\f115";
+    $font-Flaticon-book: "\f116";
+    $font-Flaticon-brokerage: "\f117";
+    $font-Flaticon-handcuffs: "\f118";
+    $font-Flaticon-facebook-logo: "\f119";
+    $font-Flaticon-smartphone-call: "\f11a";
+    $font-Flaticon-instagram: "\f11b";
+    $font-Flaticon-linkedin-logo: "\f11c";
+    $font-Flaticon-email-filled-closed-envelope: "\f11d";
