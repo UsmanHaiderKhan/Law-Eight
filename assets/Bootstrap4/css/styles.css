@@ -56,7 +56,7 @@ html, body {
     background: #060a21;
     color: #fff;
     transition: all 0.3s;
-    overflow-y: scroll;
+    overflow-y: hidden;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -434,15 +434,73 @@ a:hover {
     font-family: 'Parc Place';
 }
 
+/* ----------- CSS OVERLAY  ---------- */
+
+.containing {
+    position: relative;
+    width: 100%;
+    z-index: 99999;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    z-index: 999999;
+}
+
+.containing:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* ----------- CSS OVERLAY  ---------- */
+
 .services-card {
     text-align: center;
     padding: 40px 16px;
     background-color: rgb(225, 232, 255);
     box-shadow: 5px 8.66px 25px 0px rgba(0, 18, 74, 0.75);
     background-size: 131px;
-    /* background-position-y: 57%; */
     background-position: right bottom;
     background-repeat: no-repeat;
+}
+
+.services-card:hover {
+    box-shadow: 5px 8.66px 25px 0px rgba(255, 170, 35, 0.75);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(225, 232, 255, 0.5);
 }
 
 /* .services-card::after {
@@ -661,46 +719,47 @@ a:hover {
 #ttr .small-box {
     height: 67px;
     width: 67px;
-    background-color: transparent;
+    background-color: #01103e;
     border-color: #ffaa23;
 }
 
 #ttr .small-box.box-1 {
-    top: 14px;
-    left: 13px;
+    top: 10px;
+    left: 8px;
     border-top: 2px solid #ffaa23;
     border-left: 2px solid #ffaa23;
 }
 
 #ttr .small-box.box-2 {
-    top: 14px;
-    right: 13px;
+    top: 9px;
+    right: 9px;
     border-top: 2px solid #ffaa23;
     border-right: 2px solid #ffaa23;
 }
 
 #ttr .small-box.box-3 {
-    bottom: 12px;
-    left: 16px;
+    bottom: 8px;
+    left: 10px;
     border-left: 2px solid #ffaa23;
     border-bottom: 2px solid #ffaa23;
 }
 
 #ttr .small-box.box-4 {
-    bottom: 13px;
-    right: 15px;
+    bottom: 9px;
+    right: 9px;
     border-right: 2px solid #ffaa23;
     border-bottom: 2px solid #ffaa23;
 }
 
 #ttr .bg-color {
-    background: transparent;
+    background: #01103e;
 }
 
 #ttr .radi {
     left: -7%;
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
+    background: #01103e;
     box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 0, 0.42);
 }
 
@@ -740,8 +799,30 @@ a:hover {
 #ttr .attr-desc {
     font-size: 14px;
     color: #333333;
+    text-align: center;
     font-family: 'Parc Place';
 }
+
+/* #ttr .square-img {
+    height: 250px;
+    width: 250px;
+    background-image: url('../../Images/attr/at-1.png');
+    background-position-y: 6px;
+    background-repeat: no-repeat;
+    border: 3px solid #01103e;
+}
+
+#ttr .circle-img {
+    height: 270px;
+    width: 270px;
+    background-image: url('../../Images/attr/at-1.png');
+    background-repeat: no-repeat;
+    background-position-y: -6px;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    border-radius: 50%;
+} */
 
 /*================================= 
           Read More Styling
@@ -1544,13 +1625,116 @@ button:focus {
 
 @media screen and (max-width: 1366px) {}
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 36px 122px 10px 36px !important;
+    }
+    #home .main-banner-text {
+        font-size: 44px;
+    }
+    #home .main-banner-desc {
+        font-size: 16px;
+    }
+    .comments-space {
+        height: 392px;
+    }
+    .who-text-desc {
+        font-size: 16px;
+    }
+    #about {
+        padding: 65px 0 0px 0;
+    }
+    .service-text {
+        font-size: 30px;
+    }
+    .service-desc {
+        font-size: 16px;
+    }
+    .services-heading {
+        font-size: 22px;
+    }
+    #ttr .radi {
+        width: 215px;
+    }
+    #ttr .small-box {
+        height: 55px;
+        width: 55px;
+    }
+    #ttr .small-box.box-1 {
+        top: 7px;
+        left: 12px;
+    }
+    #ttr .small-box.box-2 {
+        top: 8px;
+        right: 13px;
+    }
+    #ttr .small-box.box-3 {
+        bottom: 7px;
+        left: 12px;
+    }
+    #ttr .small-box.box-4 {
+        bottom: 7px;
+        right: 13px;
+    }
+    #ttr .attr-name {
+        font-size: 24px;
+    }
+    #ttr .attr-designation {
+        font-size: 12px;
+    }
+    .comments-space {
+        height: 385px;
+    }
+    .news-desc {
+        font-size: 16px;
+    }
+    .date-text {
+        font-size: 16px;
+    }
+    .news-text {
+        font-size: 30px;
+    }
+    .card-heading {
+        font-size: 15px;
+    }
+    .card-desc {
+        font-size: 13px;
+    }
+    .contact-text {
+        font-size: 30px;
+    }
+    .contact-desc {
+        font-size: 15px;
+    }
+    .input-field {
+        height: 55px;
+    }
+    .contact-info {
+        font-size: 12px;
+    }
+    .radi {
+        left: 23%;
+    }
+}
 
 @media screen and (max-width: 900px) {}
 
 @media screen and (max-width: 800px) {}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    #home .main-banner-text {
+        font-size: 34px;
+    }
+    #home .main-banner-desc {
+        font-size: 15px;
+    }
+    .btn-services {
+        font-size: 16px;
+    }
+    #home .btn-contact {
+        font-size: 16px;
+    }
+}
 
 @media screen and (max-width: 415px) {}
 
