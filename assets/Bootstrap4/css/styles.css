@@ -1734,6 +1734,44 @@ button:focus {
     #home .btn-contact {
         font-size: 16px;
     }
+    #home .owl-theme .owl-nav.disabled+.owl-dots {
+        right: 54px;
+    }
+    #home .owl-theme .owl-dots .owl-dot span {
+        width: 20px;
+        height: 20px;
+    }
+    #home .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        width: 18px;
+        height: 18px;
+    }
+    .who-text {
+        font-size: 28px;
+    }
+    .who-text-desc {
+        font-size: 15px;
+    }
+    .comments-space {
+        height: 260px;
+    }
+    .service-desc {
+        font-size: 15px;
+    }
+    .service-desc {
+        font-size: 15px;
+    }
+    .radi {
+        left: 35%;
+    }
+    #ttr .radi {
+        left: 17%;
+    }
+    .media-news-mt {
+        margin-top: 30px;
+    }
+    .media-news-align {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 415px) {}
