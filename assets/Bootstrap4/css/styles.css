@@ -439,7 +439,6 @@ a:hover {
 .containing {
     position: relative;
     width: 100%;
-    z-index: 99999;
 }
 
 .image {
@@ -1625,6 +1624,7 @@ button:focus {
 
 @media screen and (max-width: 1366px) {}
 
+: 0;
 @media screen and (max-width: 1024px) {
     .navbar {
         padding: 36px 122px 10px 36px !important;
@@ -1725,6 +1725,9 @@ button:focus {
     #home .main-banner-text {
         font-size: 34px;
     }
+    .navbar {
+        padding: 10px 122px 10px 36px !important;
+    }
     #home .main-banner-desc {
         font-size: 15px;
     }
@@ -1774,7 +1777,55 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 415px) {}
+@media screen and (max-width: 415px) {
+    #home .owl-theme .owl-nav.disabled+.owl-dots {
+        right: 40%;
+        top: 640px;
+        margin-top: 0;
+    }
+    #home .owl-theme .owl-dots .owl-dot {
+        display: inline-block !important;
+    }
+    .comments-space {
+        height: 342px;
+    }
+    .btn-more-about {
+        width: 134px;
+        height: 43px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .service-text {
+        font-size: 28px;
+    }
+    .service-desc {
+        font-size: 14px;
+    }
+    #ttr .attr-name {
+        font-size: 26px;
+    }
+    #ttr .attr-designation {
+        font-size: 14px;
+    }
+    .news-text {
+        font-size: 30px;
+    }
+    .news-desc {
+        font-size: 16px;
+    }
+    .media-blog-mt {
+        margin-top: 30px;
+    }
+    .contact-desc {
+        font-size: 18px;
+        width: 100%!important;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .contact-text {
+        font-size: 30px;
+    }
+}
 
 @media screen and (max-width: 411px) {}
 
