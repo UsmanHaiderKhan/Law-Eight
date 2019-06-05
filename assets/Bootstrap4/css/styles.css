@@ -1841,7 +1841,67 @@ button:focus {
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {}
 
-@media screen and (max-width: 823px) and (orientation: landscape) {}
+@media screen and (max-width: 824px) and (orientation: landscape) {
+    .navbar {
+        padding: 36px 73px 10px 8px;
+    }
+    #home .main-banner-text {
+        font-size: 32px;
+    }
+    #home .main-banner-desc {
+        font-size: 16px;
+    }
+    .navbar-btn {
+        width: 78px;
+    }
+    #home .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        width: 18px;
+        height: 18px;
+    }
+    #home .owl-theme .owl-dots .owl-dot span {
+        width: 26px;
+        height: 26px;
+    }
+    .who-text {
+        font-size: 28px;
+    }
+    .who-text-desc {
+        font-size: 16px;
+    }
+    .comments-space {
+        height: 267px;
+    }
+    .service-text {
+        font-size: 28px;
+    }
+    .service-desc {
+        font-size: 16px;
+    }
+    #ttr .radi {
+        left: 10%;
+    }
+    #ttr .attr-name {
+        font-size: 24px;
+    }
+    .comments-space {
+        height: 310px;
+    }
+    .news-desc {
+        font-size: 16px;
+    }
+    .media-news-mt {
+        margin-top: 30px;
+    }
+    .news-text {
+        font-size: 28px;
+    }
+    .contact-text {
+        font-size: 28px;
+    }
+    .media-news-align {
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 812px) and (orientation: landscape) {}
 
