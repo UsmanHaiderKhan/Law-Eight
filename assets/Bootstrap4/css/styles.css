@@ -1624,7 +1624,6 @@ button:focus {
 
 @media screen and (max-width: 1366px) {}
 
-: 0;
 @media screen and (max-width: 1024px) {
     .navbar {
         padding: 36px 122px 10px 36px !important;
@@ -1855,12 +1854,12 @@ button:focus {
         width: 78px;
     }
     #home .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
     }
     #home .owl-theme .owl-dots .owl-dot span {
-        width: 26px;
-        height: 26px;
+        width: 20px;
+        height: 20px;
     }
     .who-text {
         font-size: 28px;
@@ -1905,7 +1904,27 @@ button:focus {
 
 @media screen and (max-width: 812px) and (orientation: landscape) {}
 
-@media screen and (max-width: 740px) and (orientation: landscape) {}
+@media screen and (max-width: 740px) and (orientation: landscape) {
+    #home .main-banner-text {
+        font-size: 42px;
+    }
+    #home .owl-theme .owl-dots .owl-dot span {
+        width: 20px;
+        height: 20px;
+    }
+    .comments-space {
+        height: 331px;
+    }
+    .radi {
+        left: 40%;
+    }
+    #ttr .radi {
+        left: 25%;
+    }
+    .card-heading {
+        font-size: 24px;
+    }
+}
 
 @media screen and (max-width: 736px) and (orientation: landscape) {}
 
